@@ -1,38 +1,32 @@
 {
 	"schemaVersion": 1,
-	"id": "MyEconomySystemSupport",
-	"version": "${version}",
-	"name": "MyEconomySystemSupport",
-	"description": "마인크래프트 버킷 갯수 조절 모드",
+	"id": "stackablebuckets",
+	"version": "1.0.0",
+	"name": "Stackable Buckets",
+	"description": "양동이 아이템을 16개까지 쌓을 수 있게 해줍니다",
 	"authors": [
-		"기도는그만할래"
+		"작성자 이름"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"homepage": "연락처 또는 홈페이지 URL",
+		"sources": "소스 코드 URL"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"license": "MIT",
 	"environment": "*",
-
 	"entrypoints": {
 		"main": [
-			"com.StackableBuckets.StackableBuckets"
+			"com.stackablebuckets.StackableBuckets"
 		],
 		"client": [
-			"com.StackableBuckets.StackableBucketsClient"
+			"com.stackablebuckets.StackableBucketsClient"
 		]
 	},
 	"mixins": [
 		"stackablebuckets.mixins.json"
 	],
 	"depends": {
-		"fabricloader": ">=0.16.10",
-		"minecraft": "~1.21.4",
-		"java": ">=21",
-		"fabric-api": "*"
-	},
-	"suggests": {
-		"another-mod": "*"
+		"fabricloader": ">=0.14.0",
+		"fabric": "*",
+		"minecraft": ">=1.19.0"
 	}
 }

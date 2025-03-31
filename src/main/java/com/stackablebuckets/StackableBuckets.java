@@ -1,4 +1,4 @@
-package com.stackalbeBuckets;
+package com.stackablebuckets;
 
 import net.fabricmc.api.ModInitializer;
 import org.slf4j.Logger;

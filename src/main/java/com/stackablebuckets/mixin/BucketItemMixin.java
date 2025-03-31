@@ -1,4 +1,4 @@
-package com.stackalbeBuckets.mixin;
+package com.stackablebuckets.mixin;
 
 import net.minecraft.item.BucketItem;
 import net.minecraft.item.Item;
@@ -19,4 +19,3 @@ public class BucketItemMixin {
         return settings.maxCount(16); // 스택 사이즈를 16으로 설정
     }
 }
-
