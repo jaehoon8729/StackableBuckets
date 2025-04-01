@@ -28,10 +28,8 @@ public abstract class ItemStackMixin {
         Identifier itemId = Registries.ITEM.getId(item);
         String itemPath = itemId.getPath();
 
-        // 일반 양동이 아이템 체크 (특수 양동이 제외)
-        boolean isBucket = itemPath.contains("bucket") &&
-                !itemPath.equals("milk_bucket") &&
-                !itemPath.equals("powder_snow_bucket");
+        // 모든 양동이 아이템 체크 (특수 양동이 포함)
+        boolean isBucket = itemPath.contains("bucket");
 
         if (isBucket) {
             // 로그를 한 번만 출력
