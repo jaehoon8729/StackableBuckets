@@ -9,9 +9,9 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
 /**
- * 우유 양동이와 가루눈 양동이의 getMaxCount 메서드를 높은 우선순위로 오버라이드
+ * 우유 양동이와 가루눈 양동이의 getMaxCount 메서드를 매우 높은 우선순위로 오버라이드
  */
-@Mixin(value = Item.class, priority = 1000)
+@Mixin(value = Item.class, priority = 2000)
 public class SpecialBucketsMixin {
 
     @Inject(method = "getMaxCount", at = @At("HEAD"), cancellable = true)
@@ -21,7 +21,7 @@ public class SpecialBucketsMixin {
 
         // 특정 아이템인 경우에만 처리
         if (itemPath.equals("milk_bucket") || itemPath.equals("powder_snow_bucket")) {
-            StackableBuckets.LOGGER.info("특수 양동이 최대 스택 크기 오버라이드 (우선순위 1000): {}", itemPath);
+            StackableBuckets.LOGGER.info("특수 양동이 최대 스택 크기 오버라이드 (우선순위 2000): {}", itemPath);
             info.setReturnValue(16);
             info.cancel();
         }

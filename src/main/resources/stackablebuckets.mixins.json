@@ -10,7 +10,8 @@
 		"ItemsInitMixin",
 		"ItemMaxCountAccessor",
 		"BucketDetectorMixin",
-		"ComponentItemMixin"
+		"ComponentItemMixin",
+		"SpecialBucketFixMixin"
 	],
 	"client": [
 	],
