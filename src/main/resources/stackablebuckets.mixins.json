@@ -5,13 +5,7 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"ItemStackMixin",
-		"ItemMixin",
-		"SpecialBucketsMixin",
-		"ItemsInitMixin",
-		"ItemMaxCountAccessor",
-		"BucketDetectorMixin",
-		"ComponentItemMixin",
-		"SpecialBucketFixMixin"
+		"SpecialBucketsMixin"
 	],
 	"client": [
 	],
