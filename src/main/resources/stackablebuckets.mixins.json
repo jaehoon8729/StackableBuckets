@@ -5,7 +5,9 @@
 	"compatibilityLevel": "JAVA_17",
 	"mixins": [
 		"ItemStackMixin",
-		"SpecialBucketsMixin"
+		"SpecialBucketsMixin",
+		"BucketItemMixin",
+		"AbstractFurnaceBlockEntityMixin"
 	],
 	"client": [
 	],
